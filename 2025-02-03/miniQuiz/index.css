@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  display: flex;
+}
+ul li {
+  width: 200px;
+  height: 60px;
+  list-style: none;
+  text-align: center;
+  line-height: 60px;
+}
+div {
+  width: 800px;
+  padding: 60px;
+}

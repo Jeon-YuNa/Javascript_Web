@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.4s;
+    }
+    ul.active {
+      display: block;
+    }
+    li {
+      list-style: none;
+      padding: 10px 30px;
+      background-color: #ccc;
+    }
+    li:hover {
+      background-color: blue;
+      color: #fff;
+    }
+
+    .pages {
+      display: flex;
+      width: 210px;
+      overflow-x: scroll;
+      margin: 100px auto;
+    }
+    .pages > span {
+      display: block;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <button>Click Me</button>
+    <ul>
+      <li>Link1</li>
+      <li>Link2</li>
+      <li>Link3</li>
+      <li>Link4</li>
+    </ul>
+
+    <div class="pages">
+      <span class="prev">&lt;</span>
+      <span class="page">1</span>
+      <span class="page">2</span>
+      <span class="page">3</span>
+      <span class="page">4</span>
+      <span class="page">5</span>
+      <span class="next">&gt;</span>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

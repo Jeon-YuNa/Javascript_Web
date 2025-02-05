@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <style>
+    input {
+      padding: 10px;
+    }
+    button {
+      padding: 12px;
+      border-radius: 30px;
+      background-color: #000;
+      color: #fff;
+      font-weight: 700;
+      border: 0;
+      opacity: 0.3;
+    }
+    p span {
+      color: #aaa;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+  </style>
+  <body>
+    <input id="input" type="text" />
+    <button id="button">중복확인</button>
+    <p>
+      <span class="check1">특수문자 포함</span>
+      <span class="check2">6~20자 내외</span>
+    </p>
+  </body>
+</html>
+<script>
+  // input.addEventListener("input", (e) => {
+  //   const { value } = e.target;
+  //   const { length } = value;
+  //   const include = ["!", "@", "$", "%", "^", "*", "_", "+", "~"];
+
+  //   const chec1 = value.includes(...include)
+  //     ? check1.style.setProperty("color", "#3CDD5C")
+  //     : check1.style.setProperty("color", "#aaa");
+  //   const chec2 =
+  //     length >= 6 && length <= 20
+  //       ? check2.style.setProperty("color", "#3CDD5C")
+  //       : check2.style.setProperty("color", "#aaa");
+
+  //   if (length >= 6 && length <= 20 && value.includes(...include)) {
+  //     button.style.setProperty("opacity", "1");
+  //   } else {
+  //     button.style.setProperty("opacity", "0.3");
+  //   }
+  // });
+</script>

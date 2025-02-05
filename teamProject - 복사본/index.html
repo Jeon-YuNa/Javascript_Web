@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/travel.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <script type="module" src="js/data.js" defer></script>
+    <script type="module" src="js/search.js" defer></script>
+    <script src="js/submit.js" defer></script>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="search-background">
+      <div class="search-wrap">
+        <div id="search">
+          <div class="close"><i class="fa-solid fa-x"></i></div>
+          <div class="oneWay"><span>편도</span></div>
+          <div class="airplane">
+            <div class="depart">
+              <strong>ICN</strong>
+              <span>인천</span>
+            </div>
+            <div class="arrive">
+              <strong id="arriveEn">OSA</strong>
+              <span id="arriveKo">오사카</span>
+            </div>
+          </div>
+          <div class="date">
+            <input
+              type="date"
+              id="dateInput"
+              name="trip-start"
+              value="2025-03-01"
+              min="2025-03-01"
+              max="2025-07-31"
+            />
+          </div>
+          <div class="people">
+            <div>
+              성인
+              <div class="count">
+                <strong id="adultNum">1</strong>
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+              </div>
+            </div>
+            <div>
+              소아
+              <div class="count">
+                <strong id="childNum">0</strong>
+                <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                <span class="minus"><i class="fa-solid fa-minus"></i></span>
+              </div>
+            </div>
+          </div>
+          <button id="submit">검색하기</button>
+        </div>
+        <div id="travel">
+          <h2>도착지</h2>
+          <h3>일본</h3>
+          <ul id="travelList"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

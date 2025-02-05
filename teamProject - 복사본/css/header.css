@@ -1,0 +1,14 @@
+#header {
+  padding: 20px 0;
+  text-align: center;
+  cursor: pointer;
+}
+#header h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#header span {
+  font-size: 14px;
+  font-weight: 700;
+  color: #999;
+}
