@@ -8,13 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="css/travel.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/airplaneList.css" />
     <script type="module" src="js/data.js" defer></script>
     <script type="module" src="js/search.js" defer></script>
-    <script src="js/submit.js" defer></script>
+    <script type="module" src="js/submit.js" defer></script>
   </head>
   <body>
     <header id="header"></header>
@@ -39,8 +46,8 @@
               id="dateInput"
               name="trip-start"
               value="2025-03-01"
-              min="2025-03-01"
-              max="2025-07-31"
+              min="2025-01-01"
+              max="2025-06-30"
             />
           </div>
           <div class="people">
@@ -69,6 +76,9 @@
           <ul id="travelList"></ul>
         </div>
       </div>
+    </div>
+    <div id="airplaneWrap">
+      <div id="airplaneInfoContainer"></div>
     </div>
   </body>
 </html>

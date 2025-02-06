@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Pretendard Variable";
 }
 li {
   list-style: none;
 }
 #header,
 #search,
-#travel {
+#travel,
+#airplaneInfoContainer {
   width: 100%;
   max-width: 768px;
   background-color: #fff;
