@@ -15,7 +15,7 @@ const companyRandom = () =>
 const destList = [
   { Ko: "도쿄", En: "TYO" },
   { Ko: "오사카", En: "OSA" },
-  { Ko: "후쿠오카", En: "HUK" },
+  { Ko: "후쿠오카", En: "FUK" },
   { Ko: "삿포로", En: "SAT" },
   { Ko: "오이타", En: "OIT" },
   { Ko: "가고시마", En: "KAG" },
